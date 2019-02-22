@@ -28,7 +28,7 @@ public class PathService {
      * @return the full path.
      */
     public String resolvePath() {
-        return Paths.get(PREFIX, filePath).toString();
+        return Paths.get(PREFIX, filePath).normalize().toString();
     }
 
 }
