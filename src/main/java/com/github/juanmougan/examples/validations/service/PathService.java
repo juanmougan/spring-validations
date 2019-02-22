@@ -1,15 +1,13 @@
 package com.github.juanmougan.examples.validations.service;
 
-import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.nio.file.Paths;
 
 /**
- * Very basic example of a service that reads a property and adds a preffix.
+ * Very basic example of a service that reads a property and adds a prefix.
  */
 @Service
 @Slf4j

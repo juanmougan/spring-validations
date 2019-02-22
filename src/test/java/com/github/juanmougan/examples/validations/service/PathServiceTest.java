@@ -1,19 +1,16 @@
 package com.github.juanmougan.examples.validations.service;
 
 import com.github.juanmougan.examples.validations.validator.MissingPropertiesValidator;
-import org.junit.Assert;
 import org.junit.Test;
-
-import static com.github.juanmougan.examples.validations.service.PathService.*;
-import static org.mockito.Mockito.*;
-
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.nio.file.Paths;
 
-import static org.junit.Assert.*;
+import static com.github.juanmougan.examples.validations.service.PathService.PREFIX;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.doNothing;
 
 @RunWith(SpringRunner.class)
 public class PathServiceTest {
