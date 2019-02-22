@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class PathServiceTest {
 
-    private PathService pathService = new PathService();
+//    private PathService pathService = new PathService();
 
     // TODO mock the validator here instead
 //    @Test

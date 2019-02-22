@@ -7,8 +7,11 @@ import org.springframework.util.StringUtils;
 @Service
 public class MissingPropertiesValidator implements Validator {
 
-    @Value("${file.path}")
     private String filePath;
+
+    public MissingPropertiesValidator(@Value("${file.path}") String filePath) {
+        this.filePath = filePath;
+    }
 
     @Override
     public void validate() {

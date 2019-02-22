@@ -16,14 +16,12 @@ import java.nio.file.Paths;
 @Slf4j
 public class PathService {
 
-    @Value("${file.path}")
     private String filePath;
 
     public static final String PREFIX = "hello-world";
 
-    @Autowired
-    public PathService() {
-        log.info("Creating bean PathService");
+    public PathService(@Value("${file.path}") String filePath) {
+        this.filePath = filePath;
     }
 
     /**
