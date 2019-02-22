@@ -12,7 +12,6 @@ import java.nio.file.Paths;
  * Very basic example of a service that reads a property and adds a preffix.
  */
 @Service
-//@NoArgsConstructor
 @Slf4j
 public class PathService {
 
